@@ -1,0 +1,300 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2.2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    text-shadow: 0.1em 0.1em 0.1em rgb(0, 0, 0);
+    background-color: #22a834;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #29b14b;
+}
+
+.container{
+    max-width: 1250px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(55,55,55);
+}
+
+header .logo{
+    margin: 0;
+    padding: 20px 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255) ;
+    
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 4px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 0.9em;
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    margin: 8px;
+    text-shadow: 0.1em 0.1em 0.1em rgb(0, 0, 0);
+    background-color: #22a834;
+}
+
+header a:hover{
+    background-color: #29b14b;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+     ,url("../img/302.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     padding: 330px 12px;
+}
+
+#hero h1{
+    color: rgb(255, 255, 255);
+    text-shadow: 0.1em 0.1em 0.1em rgb(24, 24, 24);
+}
+
+#trabajando-juntos .container{
+    text-align: center;
+    padding: 150px 12px;
+    background-color: rgb(30, 30, 30);
+    color: rgb(255, 255, 255);
+}
+
+#nuestros-productos{
+    background-color: rgb(30, 30, 30);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.1em rgb(0, 0, 0);
+}
+
+#nuestros-productos .container{
+    padding: 70px 12px;
+}
+
+#nuestros-productos h2{
+    margin: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-productos p{
+    display: none;
+}
+
+#nuestros-productos .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 60px;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 1px 10px 15px rgba(68, 68, 68, 0.555);
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+     ,url("../img/papa.jpeg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+     ,url("../img/tomate.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+     ,url("../img/lulo.webp");
+}
+
+
+
+footer{
+    background-color: rgb(30, 30, 30);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(228, 228, 228);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+    #hero h1{
+        font-size: 4.2em;
+    }
+
+    #trabajando-juntos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #trabajando-juntos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #trabajando-juntos h2{
+        margin-top: 0px;
+    }
+
+    #trabajando-juntos .img-container{
+        background-image: url("../img/Frutas.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width:  450px;
+        box-shadow: 1px 10px 15px rgba(68, 68, 68, 0.555);
+    }
+
+    #nuestros-productos .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-productos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-productos h3{
+        margin-top: 0;
+    }
+
+    #nuestros-productos .carta{ 
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(30,30, 30);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ) 
+         ,url("../img/Papa-Corta.jpeg");
+    }
+    
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ) 
+         ,url("../img/Tomate-Corto.jpeg");
+    }
+    
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ) 
+         ,url("../img/Lulo-Corto.jpeg");
+    }
+
+    #ingresa-ahora h2{
+        font-size: 3.5em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
+}
+
